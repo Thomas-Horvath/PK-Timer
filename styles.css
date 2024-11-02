@@ -1,0 +1,60 @@
+:root {
+    --bg: #343434;
+    --text-ligth: aliceblue;
+    --orange: orange;
+    --orange-light: rgb(255, 198, 93);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text-ligth);
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.timer {
+    border: 2px solid var(--orange);
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+button {
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    background: var(--orange);
+    cursor: pointer;
+    margin: .5rem;
+    transition: .5s;
+    font-size: 1rem;
+
+    &:hover {
+        background: var(--orange-light);
+    }
+
+    &:active {
+        transform: scale(.9);
+    }
+}
